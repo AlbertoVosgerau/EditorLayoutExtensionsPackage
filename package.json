@@ -1,7 +1,7 @@
 {
   "name": "com.albertovosgerau.editorlayoutextensions",
-  "displayName": "Unity Editor Layout",
-  "version": "0.0.3",
+  "displayName": "Unity Editor Layout Extensions",
+  "version": "0.0.1",
   "unity": "2020.3",
   "description": "Unity Editor Layout Extensions helps the creation of custom inspectors using cleaner code",
   "keywords": [
