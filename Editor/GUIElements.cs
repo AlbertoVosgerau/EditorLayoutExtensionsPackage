@@ -128,5 +128,36 @@ namespace EditorLayoutExtensions.GUIElements
                 content();
             }
         }
+        
+        /// <summary>
+        /// Displays dialog
+        /// </summary>
+        /// <param name="title">Title</param>
+        /// <param name="message">Message explaining what the window does</param>
+        /// <param name="okText">ok text</param>
+        /// <param name="callback">callback called if the user clicks ok button</param>
+        public static void ConfirmationWindow(string title, string message, string okText, Action callback)
+        {
+            if (EditorUtility.DisplayDialog(title, message, okText))
+            {
+                callback();
+            }
+        }
+        
+        /// <summary>
+        /// Displays dialog
+        /// </summary>
+        /// <param name="title">Title</param>
+        /// <param name="message">Message explaining what the window does</param>
+        /// <param name="okText">ok text</param>
+        /// <param name="cancelText">cancel text</param>
+        /// <param name="callback">callback called if the user clicks ok button</param>
+        public static void ConfirmationWindow(string title, string message, string okText, string cancelText, Action callback)
+        {
+            if (EditorUtility.DisplayDialog(title, message, okText, cancelText))
+            {
+                callback();
+            }
+        }
     }
 }
